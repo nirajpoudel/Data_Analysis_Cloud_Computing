@@ -205,10 +205,6 @@ The data monitoring role was established through AWS CloudWatch to supervise bot
   <h2> Conclusion </h2>
   <p>My City of Vancouver Public Washrooms Data Platform implementation obeys standard practices for data analysis plus security processes and governance standards and monitoring systems.</p>
 
- 
-    <br>
- 
-
 
   
 </html>
