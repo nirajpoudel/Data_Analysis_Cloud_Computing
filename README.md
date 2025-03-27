@@ -7,7 +7,7 @@
     Through effective data management we can determine public toilet usage rates to decide appropriate maintenance levels that benefit residents inside the area and those passing through it. Effective data management assists local governments to take better decisions through improved resource allocations which results in an overall improved service quality.
     </p>
 
-  <h2> 1 DATA INJECTION.(S3 Bucket)</h2>
+  <h2> 1. DATA INJECTION.(S3 Bucket)</h2>
   <p>Data ingestion refers to the operational method of extracting valuable information from multiple information sources. Data is gathered through three primary sources: IoT sensors used to monitor possessions, reports filed by maintenance staff members and the Open Data Portal of Vancouver that contains washroom and sewer-related data. The collected data helps both decision-making processes and analytical activities.  
   </p>
   
@@ -48,7 +48,7 @@
 <br>
   <img src = "images/POWERSHELL_23.jpg">
   <br>
-  <h2> DATA PROFILING</h2>
+  <h1>2. DATA PROFILING</h1>
   <p>Data Profiling:
     Here, we will review the dataset so that we can achieve the following with AWS:
     Data structure: Column count, column name, column position and data type
@@ -81,7 +81,7 @@
         <img src = "images/DATACLEANING_15.png">
         <br>
   <br>
-  <h1> DATA CATALOGING</h1>
+  <h1>4. DATA CATALOGING</h1>
   <p>Data-Cataloging
     AWS Glue Catalog serves as the tool to manage dataset catalogs.
     Establish metadata tables with attributes for washroom facilities and sewer hookup information and maintenance record tracking.
@@ -109,8 +109,8 @@
   <br>
   <img src = "images/DATACATALOG_20.png">
   <br>
-  <h1> DATA Summarization</h1>
-  <p>Data Summarization:
+  <h1>4. DATA Sumarization</h1>
+  <p>Data Sumarization:
    The information processed for report creation and insights generation falls under summarization. Implementation:
    The processed data should be stored and analyzed through AWS Redshift. Write important reports on:
     </p>
@@ -127,7 +127,7 @@
   <br>
   <img src = "images/LIFECYCLE_22.png">
   <br>
-  <h1> DATA INJECTION (Powershell) </h1>
+  <h1>5. DATA INJECTION (Powershell) </h1>
   <br>
   <img src = "images/POWERSHELL_23.jpg">
   <br>
@@ -141,7 +141,7 @@
   <h1>Project 2</h1>
   <p>This research demonstrates the development of a Data Analytics Platform (DAP) to analyze washroom data collected by the City of Vancouver Water and Sewer Department. The main decision-making goal requires developing a systematic data management system to ensure data quality, data security, data governance and monitoring.
   </p>
-  <h1>1 Data Analysis</h1>
+  <h1>1. Data Analysis</h1>
   <p>Implementation:
     The public washroom data stored in AWS S3 data lake could be accessed by using Amazon Athena for analytical purposes. Using an SQL command, I retrieved important data points while determining the average primary ID value in the dataset titled "pubwashrooms-lst-metrics". I then performed data sorting to locate the ten entries which displayed the highest average primary ID values.</p>
 <br>
@@ -155,7 +155,7 @@
   <br>
   <img src = "images/DA.png">
   <br>
-   <h1>2 Data Security </h1>
+   <h1>2. Data Security </h1>
   <p>Implementation:
     The S3 bucket data storage benefited from encryption through the implementation of AWS Key Management Service (AWS KMS) to ensure public washroom data safety. AWS KMS enables automatic encryption of stored data while it is saved to the S3 server. The bucket versioning capability of maintaining data history together with protection against accidental data removal.
     </p>
@@ -172,7 +172,7 @@
   <br>
   <img src = "images/Dtasecuritybucketversioning.png">
   <br>
-  <h1> Data Governance </h1>
+  <h1>3. Data Governance </h1>
     <p>Implementation:
       I used the public washroom dataset to create a structure in the AWS Glue Data Catalog. The dataset received a schema definition and metadata entry in the organization similar to establishing a catalog system of library resources. The data access rules I established through IAM policies determine which authorized users can read or amend the data.
       </p>
@@ -192,7 +192,10 @@
     <img src = "images/dtagvnuser.png">
     <br>
 
-    <h1> DATA MONITORING </h1>
+    <h1>4. DATA MONITORING </h1>
+<p>Implementation:
+The data monitoring role was established through AWS CloudWatch to supervise both the performance and data health of the system. CloudWatch acts as an observation system that provides information about BucketSizeBytes storage capacity and ResourceUsage resource allocation. CloudWatch creates separate S3 folders for data quality errors that occur with automatic logging to allow later analysis and data correction.
+</p>
   <br>
   <img src = "images/Monitoring and controlling week 9 (1).png">
   <br> 
