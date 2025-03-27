@@ -191,8 +191,7 @@
     <br>
     <img src = "images/dtagvnuser.png">
     <br>
-
-    <h1>4. DATA MONITORING </h1>
+<h1>4. DATA MONITORING </h1>
 <p>Implementation:
 The data monitoring role was established through AWS CloudWatch to supervise both the performance and data health of the system. CloudWatch acts as an observation system that provides information about BucketSizeBytes storage capacity and ResourceUsage resource allocation. CloudWatch creates separate S3 folders for data quality errors that occur with automatic logging to allow later analysis and data correction.
 </p>
@@ -203,11 +202,8 @@ The data monitoring role was established through AWS CloudWatch to supervise bot
   <br>
   <img src = "images/Monitoring and controlling week 9 (2).png">
   <br>  
-  <p>Conclusion:
- 
-    My City of Vancouver Public Washrooms Data Platform implementation obeys standard practices for data analysis plus security processes and governance standards and monitoring systems.</p>         
-        
-      
+  <h2> Conclusion </h2>
+  <p>My City of Vancouver Public Washrooms Data Platform implementation obeys standard practices for data analysis plus security processes and governance standards and monitoring systems.</p>
 
  
     <br>
